@@ -2,5 +2,139 @@
 
 
 *{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Poppins", sans-serif;
+}
 
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background:linear-gradient(to bottom, #2a1b6b, #5c44a2);
+    position: relative;
+}
+.estrelas{
+
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+         radial-gradient(1px 1px at 25% 15%, #fff,transparent),
+         radial-gradient(2px 1px at 50% 40%, #fff,transparent),
+         radial-gradient(2px 5px at 25% 15%, #fff,transparent),
+         radial-gradient(1px 1px at 70% 40%, #fff,transparent),
+         radial-gradient(3px 4px at 40% 25%, #fff,transparent),
+         radial-gradient(2px 1px at 35% 55%, #fff,transparent),
+         radial-gradient(1px 1px at 75% 15%, #fff,transparent),
+         radial-gradient(1px 1px at 25% 15%, #fff,transparent),
+         radial-gradient(1px 1px at 25% 15%, #fff,transparent);
+
+}
+.formulario{
+    width: 400px;
+    align-items: center;
+    background-color: rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0, 0.2);
+    color:#fff;
+    border-radius:  16px;
+    padding: 35px;
+
+
+}
+.formulario h1{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.caixa-formulario{
+    position: relative;
+    margin-bottom: 40px;
+    
+
+}
+.caixa-formulario input{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,0.1);
+    color:#fff;
+    font-size: 25px;
+    padding: 0 20px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.caixa-formulario input::placeholder{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.caixa-formulario i{
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    top: 30%;
+    
+    
+}
+.caixa-lembrar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 16px;
+    
+
+}
+.caixa-lembrar label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.caixa-lembrar label{
+    accent-color: rgb(127,12,215);
+    
+
+
+}
+.caixa-lembrar a:hover{
+    text-decoration:none ;
+    text-decoration: underline;
+    color: #fff;
+    
+
+}
+.link-registro a:hover{
+    text-decoration: underline;
+
+}
+button{
+    width: 100%;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    color: #2a1b6b;
+    size: 16px;
+    font-weight: 600;
+    transition: all;
+}
+
+.link-registro p {
+padding: 5px;
+margin: 5px;
 }
